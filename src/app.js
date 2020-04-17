@@ -9,7 +9,7 @@ import Navigation from './components/navigation/Navigation'
 import Home from './routes/Home'
 import About from './routes/About'
 import Sample from './routes/Sample'
-
+import Error from './routes/Error'
 
 
 
@@ -21,6 +21,7 @@ export const App = () => (
         <Route exact path="/" component={Home}/>
         <Route path="/about" component={About}/>
         <Route path="/sample" component={Sample}/>
+        <Route component={Error} />
       </Switch>
     </Router>
   </Fragment>

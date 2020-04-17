@@ -7,12 +7,12 @@ import Header from "../components/headers/Header";
 import Footer from "../components/footer/Footer";
 
 
-class Sample extends React.Component {
+class Error extends React.Component {
   render() {
     return (
       <div >
     
-     <Header name={'Sample'} />
+     <Header name={'404'} />
      
      {/* <h1>Hello, {this.props.name}</h1> */}
   
@@ -25,4 +25,4 @@ class Sample extends React.Component {
 
 
 
-export default Sample;
+export default Error;
