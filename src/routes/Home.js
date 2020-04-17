@@ -1,7 +1,5 @@
 import React from "react";
 
-//Navigation
-import Navigation from '../components/navigation/Navigation'
 
 //components
 import HomeHeader from "../components/headers/HomeHeader";
@@ -20,8 +18,7 @@ import BackToTop from "../components/backToTop/BackToTop";
 
 function Home() {
   return (
-    <div >  
-      <Navigation/>     
+    <div >       
       <HomeHeader />
       {/* <Brand />
       <About />

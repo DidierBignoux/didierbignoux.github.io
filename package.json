@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "Bignoux Didier <didierbignoux@hotmail.com>",
-  "description": "React Webpack Babel Starter Kit",
+  "description": "testt",
+  "homepage": "https://didierbignoux.github.io/",
   "license": "MIT",
   "scripts": {
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d dist",
     "build": "webpack --mode production",
     "start": "webpack-dev-server --mode development"
   },
@@ -37,6 +40,7 @@
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "css-loader": "^3.2.0",
     "file-loader": "^4.2.0",
+    "gh-pages": "^2.2.0",
     "gulp": "^4.0.2",
     "gulp-changed": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
