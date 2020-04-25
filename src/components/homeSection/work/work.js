@@ -1,5 +1,5 @@
-import React from "./node_modules/react";
-import { Link } from "./node_modules/react-router-dom";
+import React from "react";
+import { Link } from "react-router-dom";
 
 // import { WOW } from "wowjs";
 
@@ -55,7 +55,7 @@ class WorkArea extends React.Component {
                     <div className="overlay overlay-bg"></div>
                     <img
                       className="image img-fluid"                      
-                      src={require("../../Assets/img/work/w1.jpg")}
+                      src={require("../../../Assets/img/work/w1.jpg")}
                       alt=""
                     />
                   </div>
@@ -80,7 +80,7 @@ class WorkArea extends React.Component {
                     <div className="overlay overlay-bg"></div>
                     <img
                       className="image img-fluid"                      
-                      src={require("../../Assets/img/work/w2.jpg")}
+                      src={require("../../../Assets/img/work/w2.jpg")}
                       alt=""
                     />
                   </div>
@@ -105,7 +105,7 @@ class WorkArea extends React.Component {
                     <div className="overlay overlay-bg"></div>
                     <img
                       className="image img-fluid"                      
-                      src={require("../../Assets/img/work/w3.jpg")}
+                      src={require("../../../Assets/img/work/w3.jpg")}
                       alt=""
                     />
                   </div>

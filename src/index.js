@@ -10,4 +10,9 @@ import "./assets/css/bootstrap/bootstrap-reboot.min.css";
 import "./assets/css/bootstrap/bootstrap.min.css";
 
 
+
+//Scripts
+import "./Assets/js/main.js";
+
+
 ReactDOM.render(<App />, document.getElementById('root'));

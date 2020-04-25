@@ -21,7 +21,7 @@ function About() {
           <div className="col-lg-6 about-left">
             <img
               className="img-fluid"
-              src={require("../../Assets/img/about-img.jpg")}
+              src={require("../../../Assets/img/about-img.jpg")}
               alt=""
             />
           </div>

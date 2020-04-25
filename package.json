@@ -7,8 +7,8 @@
   "homepage": "https://didierbignoux.github.io/",
   "license": "MIT",
   "scripts": {
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages --dist dist --branch master",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages --dist dist --branch master",
     "build": "webpack --mode production",
     "start": "webpack-dev-server --mode development"
   },
@@ -17,10 +17,12 @@
     "@fortawesome/free-brands-svg-icons": "^5.13.0",
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
     "@fortawesome/react-fontawesome": "^0.1.9",
+    "animate.css": "^3.7.2",
     "history": "^4.10.1",
     "jquery": "^3.5.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
+    "react-owl-carousel": "^2.3.1",
     "react-router-dom": "^5.1.2",
     "react-router-hash-link": "^1.2.2",
     "react-wow": "^1.0.0"

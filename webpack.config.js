@@ -78,7 +78,12 @@ module.exports = function(_env, argv) {
         "process.env.NODE_ENV": JSON.stringify(
           isProduction ? "production" : "development"
         )
-      })
+      }),
+      new webpack.ProvidePlugin({
+        $: 'jquery',
+        jQuery: 'jquery',
+        'window.jQuery': 'jquery'
+    })
     ].filter(Boolean),
     optimization: {
       minimize: isProduction,
@@ -128,6 +133,10 @@ module.exports = function(_env, argv) {
       historyApiFallback: true,
       open: true,
       overlay: true
-    }
+    },
+    
+    
+    
+    
   };
 };
