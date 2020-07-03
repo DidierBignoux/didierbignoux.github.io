@@ -13,6 +13,11 @@ import "./assets/css/bootstrap/bootstrap.min.css";
 
 //Scripts
 import "./Assets/js/main.js";
+import "./Assets/js/easing.min.js";
+import "./Assets/js/hoverIntent.js";
+import "./Assets/js/superfish.min.js";
+
+
 
 
 ReactDOM.render(<App />, document.getElementById('root'));

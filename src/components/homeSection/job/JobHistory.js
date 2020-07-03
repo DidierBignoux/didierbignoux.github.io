@@ -1,7 +1,7 @@
-import React from "./node_modules/react";
-import { Link } from "./node_modules/react-router-dom";
+import React from "react";
+import { Link } from "react-router-dom";
 
-import ReactWOW from "./node_modules/react-wow";
+import ReactWOW from "react-wow";
 
 function JobHistory() {
   return (
@@ -10,39 +10,45 @@ function JobHistory() {
         <div className="row d-flex">
           <div className="col-lg-12">
             <div className="section-title">
-              <h2>Job History</h2>
-              <p>
-                If you are looking at blank cassettes on the web, you may be
-                very confused at the difference in price. You may see some for
-                as low as $.17 each.
-              </p>
+              <ReactWOW animation="fadeInRight" duration="2s">
+                <h2>Job History</h2>
+
+                <p>
+                  My career has taken a natural progression from client
+                  websites, to template cards, to UI templates, to UX design, to
+                  complex analytical UX design. 
+                </p>
+              </ReactWOW>
             </div>
           </div>
         </div>
 
         <div className="row">
-          <ReactWOW animation="fadeIn" duration="2s" >
+          <ReactWOW animation="fadeInUp" duration="2s">
             <div className="col-lg-6">
               <div className="single-job">
                 <div className="top-sec d-flex justify-content-between">
                   <div className="top-left">
-                    <h4>Intern Designer</h4>
-                    <p>Old Bird IT, New Yorkt</p>
+                    <h4>Stella Telecom</h4>
+                    <p>Webmaster</p>
                   </div>
                   <div className="top-right">
                     <Link
                       to="/#"
                       className="primary-btn"
-                      data-text="Jul '15 to Present"
+                      data-text="Aug '18 to Present"
                     >
-                      <span>J</span>
+                      <span>A</span>
                       <span>u</span>
-                      <span>l</span>
+                      <span>g</span>
+                      <span>&nbsp;</span>
                       <span>'</span>
                       <span>1</span>
                       <span>5</span>
+                      <span>&nbsp;</span>
                       <span>t</span>
                       <span>o</span>
+                      <span>&nbsp; </span>
                       <span>P</span>
                       <span>r</span>
                       <span>e</span>
@@ -55,139 +61,145 @@ function JobHistory() {
                 </div>
                 <ReactWOW animation="fadeIn" duration="2s">
                   <div className="bottom-sec">
-                    All users on MySpace will know that there are millions of
-                    people out there. Every day besides. All users on My will
-                    know that there are millions of people out of the field
-                    there.
+                    I am in charge of the proper functioning, improvement and or
+                    revolt of existing tools. Realization of the new tools, site
+                    for customers and also developer platforms for our
+                    collaborator.
                   </div>
                 </ReactWOW>
               </div>
             </div>
           </ReactWOW>
-          <ReactWOW animation="fadeIn" duration="2s">
+          <ReactWOW animation="fadeInUp" duration="2s">
             <div className="col-lg-6">
               <div className="single-job">
                 <div className="top-sec d-flex justify-content-between">
                   <div className="top-left">
-                    <h4>Intern Designer</h4>
-                    <p>Old Bird IT, New Yorkt</p>
+                    <h4>Linkeo Agence Web</h4>
+                    <p>Webmaster</p>
                   </div>
                   <div className="top-right">
                     <Link
                       to="/#"
                       className="primary-btn"
-                      data-text="Jul '15 to Present"
+                      data-text="Dec '15 to Jul '18"
                     >
-                      <span>J</span>
-                      <span>u</span>
-                      <span>l</span>
+                      <span>D</span>
+                      <span>e</span>
+                      <span>c</span>
+                      <span>&nbsp;</span>
                       <span>'</span>
                       <span>1</span>
                       <span>5</span>
+                      <span>&nbsp;</span>
                       <span>t</span>
                       <span>o</span>
-                      <span>P</span>
-                      <span>r</span>
-                      <span>e</span>
-                      <span>s</span>
-                      <span>e</span>
-                      <span>n</span>
-                      <span>t</span>
+                      <span>&nbsp; </span>
+                      <span>J</span>
+                      <span>u</span>
+                      <span>l</span>
+                      <span>&nbsp;</span>
+                      <span>'</span>
+                      <span>1</span>
+                      <span>8</span>
                     </Link>
                   </div>
                 </div>
-                <ReactWOW animation="fadeIn" duration="2s" >
+                <ReactWOW animation="fadeIn" duration="2s">
                   <div className="bottom-sec">
-                    All users on MySpace will know that there are millions of
-                    people out there. Every day besides. All users on My will
-                    know that there are millions of people out of the field
-                    there.
+                    Responsible for the creation, programming and professional
+                    website management for small and medium-sized enterprises.
+                    Responsible quality and content control of sites Web.
                   </div>
                 </ReactWOW>
               </div>
             </div>
           </ReactWOW>
-          <ReactWOW animation="fadeIn" duration="2s">
+          <ReactWOW animation="fadeInUp" duration="2s">
             <div className="col-lg-6">
               <div className="single-job">
                 <div className="top-sec d-flex justify-content-between">
                   <div className="top-left">
-                    <h4>Intern Designer</h4>
-                    <p>Old Bird IT, New Yorkt</p>
+                    <h4>Xtreme Pub Advertising</h4>
+                    <p>Graphic Designer</p>
                   </div>
                   <div className="top-right">
                     <Link
                       to="/#"
                       className="primary-btn"
-                      data-text="Jul '15 to Present"
+                      data-text="Jun '15 to Dec '15"
                     >
-                      <span>J</span>
-                      <span>u</span>
-                      <span>l</span>
+                      <span>D</span>
+                      <span>e</span>
+                      <span>c</span>
+                      <span>&nbsp;</span>
                       <span>'</span>
                       <span>1</span>
                       <span>5</span>
+                      <span>&nbsp;</span>
                       <span>t</span>
                       <span>o</span>
-                      <span>P</span>
-                      <span>r</span>
-                      <span>e</span>
-                      <span>s</span>
-                      <span>e</span>
-                      <span>n</span>
-                      <span>t</span>
+                      <span>&nbsp; </span>
+                      <span>J</span>
+                      <span>u</span>
+                      <span>l</span>
+                      <span>&nbsp;</span>
+                      <span>'</span>
+                      <span>1</span>
+                      <span>8</span>
                     </Link>
                   </div>
                 </div>
-                <ReactWOW animation="fadeIn" duration="2s" >
+                <ReactWOW animation="fadeIn" duration="2s">
                   <div className="bottom-sec">
-                    All users on MySpace will know that there are millions of
-                    people out there. Every day besides. All users on My will
-                    know that there are millions of people out of the field
-                    there.
+                    I had the opportunity to develop my skills in advertising,
+                    as the promotion of a particular product (the juices of the
+                    brand ' Sunny’) in the press and radio.
                   </div>
                 </ReactWOW>
               </div>
             </div>
           </ReactWOW>
-          <ReactWOW animation="fadeIn" duration="2s" >
+          <ReactWOW animation="fadeInUp" duration="2s">
             <div className="col-lg-6">
               <div className="single-job">
                 <div className="top-sec d-flex justify-content-between">
                   <div className="top-left">
-                    <h4>Intern Designer</h4>
-                    <p>Old Bird IT, New Yorkt</p>
+                    <h4>Open University of Mauritius</h4>
+                    <p>Intern Webmaster</p>
                   </div>
                   <div className="top-right">
                     <Link
                       to="/#"
                       className="primary-btn"
-                      data-text="Jul '15 to Present"
+                      data-text="Fev '15 to Avril '15"
                     >
-                      <span>J</span>
-                      <span>u</span>
-                      <span>l</span>
+                      <span>D</span>
+                      <span>e</span>
+                      <span>c</span>
+                      <span>&nbsp;</span>
                       <span>'</span>
                       <span>1</span>
                       <span>5</span>
+                      <span>&nbsp;</span>
                       <span>t</span>
                       <span>o</span>
-                      <span>P</span>
-                      <span>r</span>
-                      <span>e</span>
-                      <span>s</span>
-                      <span>e</span>
-                      <span>n</span>
-                      <span>t</span>
+                      <span>&nbsp; </span>
+                      <span>J</span>
+                      <span>u</span>
+                      <span>l</span>
+                      <span>&nbsp;</span>
+                      <span>'</span>
+                      <span>1</span>
+                      <span>8</span>
                     </Link>
                   </div>
                 </div>
-                <ReactWOW animation="fadeIn" duration="2s" >
+                <ReactWOW animation="fadeIn" duration="2s">
                   <div className="bottom-sec">
-                    All users on MySpace will know that there are millions of
-                    people out there. Every day besides. All users on My will
-                    know that there are millions of people out of the field
-                    there.
+                    I contributed to the redesign of the website of the
+                    University by graphically consolidating and bringing
+                    innovative idea
                   </div>
                 </ReactWOW>
               </div>
