@@ -22,7 +22,7 @@
     "gulp-cli": "^2.3.0",
     "history": "^4.10.1",
     "jquery": "^3.5.0",
-    "npm": "^6.14.5",
+    "npm": "^6.14.6",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
@@ -45,6 +45,7 @@
     "babel-loader": "^8.0.6",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "css-loader": "^3.2.0",
+    "favicons-webpack-plugin": "^3.0.1",
     "file-loader": "^4.2.0",
     "gh-pages": "^2.2.0",
     "gulp": "^4.0.2",
@@ -60,7 +61,6 @@
     "url-loader": "^2.1.0",
     "webpack": "^4.40.2",
     "webpack-cli": "^3.3.9",
-    "webpack-dev-server": "^3.11.0" 
-     
+    "webpack-dev-server": "^3.11.0"
   }
 }

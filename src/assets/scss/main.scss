@@ -1,4 +1,3 @@
-
 /*!
  * Title : Didier Bignoux Styles
  * Version : 0.1
@@ -6,16 +5,13 @@
  * Author : Didier Bignoux
  */
 
-
 @import "bootstrap/functions";
 @import "bootstrap/variables";
 
-
 //
-// Grid mixins
+// Grid mixinss
 
 @import "bootstrap/mixins/breakpoints";
-
 
 // including variables and mixins
 @import "theme/variables";
@@ -23,19 +19,10 @@
 @import "theme/flexbox";
 @import "theme/reset";
 
- // Custom Scss
- @import "theme/predefined";
- @import "theme/elements";
- @import "theme/header";
- @import "theme/home";
- @import "theme/pages";
- @import "theme/footer";
- 
-
-
-
-
-
-
-
-
+// Custom Scss
+@import "theme/predefined";
+@import "theme/elements";
+@import "theme/header";
+@import "theme/home";
+@import "theme/pages";
+@import "theme/footer";
