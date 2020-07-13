@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0",
+  "name": "didierbignoux",
+  "description": "testt",
+  "icons": {
+    "60": "/assets/img/fav-149e08466f6a3af98c1db211bc1d4d96/firefox_app_60x60.png",
+    "128": "/assets/img/fav-149e08466f6a3af98c1db211bc1d4d96/firefox_app_128x128.png",
+    "512": "/assets/img/fav-149e08466f6a3af98c1db211bc1d4d96/firefox_app_512x512.png"
+  },
+  "developer": {
+    "name": "Bignoux Didier",
+    "url": null
+  }
+}
