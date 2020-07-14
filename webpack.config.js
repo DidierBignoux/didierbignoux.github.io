@@ -85,11 +85,13 @@ module.exports = function (_env, argv) {
         jQuery: "jquery",
         "window.jQuery": "jquery",
       }),
+      // new FaviconsWebpackPlugin("./src/assets/img/fav.png"),
       new FaviconsWebpackPlugin({
-        logo: path.join("assets/img/fav.png"),
-        prefix: "assets/img/fav-[hash]/",
+        // logo: path.join("./src/assets/img/fav.png"),
+        logo: "./src/assets/img/fav.png",
+        prefix: "./assets/img/fav-[hash]/",
         emitStats: true,
-        statsFilename: "assets/img/fav.json",
+        statsFilename: "./assets/img/fav.json",
       }),
     ].filter(Boolean),
     optimization: {

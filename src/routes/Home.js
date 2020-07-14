@@ -1,7 +1,6 @@
 import React from "react";
 import { NProgress } from "@tanem/react-nprogress";
 
-
 //PreLoader
 import Bar from "../components/preloader/Bar";
 import Container from "../components/preloader/Container";
@@ -16,7 +15,7 @@ import BackToTop from "../components/backToTop/BackToTop";
 //Section
 import Brand from "../components/homeSection/Brand/brand";
 import About from "../components/homeSection/About/about";
-// import Work from "../components/homeSection/work/Work";
+import Work from "../components/homeSection/work/workiso";
 // import WorkExample from "../Section/Work/workExample";
 import JobHistory from "../components/homeSection/job/jobHistory";
 // import Service from "../components/homeSection/service/ervice";
@@ -40,7 +39,6 @@ class Home extends React.Component {
 
   render() {
     return (
-
       <React.Fragment>
         <NProgress isAnimating={this.state.isLoading}>
           {({ isFinished, progress, animationDuration }) => (
@@ -58,30 +56,20 @@ class Home extends React.Component {
         {/* {(parameters here) => ( your render code here )} */}
         {/* {console.log(this.state.isLoading)} */}
 
-        
-        <div >
-       
+        <div>
+          <HomeHeader />
+          <Brand />
+          <About />
+          <JobHistory />
+          <Work />
+          {/* <WorkExample /> */}
+          {/* <Service /> */}
 
-        <HomeHeader />
-        <Brand />
-        <About />
-        {/* <Work /> */}
-        {/* <WorkExample /> */}
-        <JobHistory />
-        {/* <Service /> */}
-
-        <Footer />
-        <HorizontalBar />
-        <BackToTop />
-
-       
+          <Footer />
+          <HorizontalBar />
+          <BackToTop />
         </div>
-        
-     
       </React.Fragment>
-
-
-  
     );
   }
 }
