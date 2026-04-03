@@ -8,7 +8,7 @@
 	"license": "MIT",
 	"scripts": {
 		"predeploy": "npm run build",
-		"deploy": "gh-pages --dist dist --branch master",
+		"deploy": "gh-pages --dist dist --branch gh-pages",
 		"build": "webpack --mode production",
 		"start": "webpack-dev-server --mode development"
 	},
