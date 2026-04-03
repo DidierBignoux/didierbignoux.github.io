@@ -1,0 +1,5 @@
+One CLI for webpack must be installed. These are recommended choices, delivered as separate packages:
+ - webpack-cli (https://github.com/webpack/webpack-cli)
+   The original webpack full-featured CLI.
+We will use "npm" to install the CLI via "npm install -D".
+Do you want to install 'webpack-cli' (yes/no): 

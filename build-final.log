@@ -1,0 +1,5 @@
+
+> didierbignoux@1.0.0 build
+> webpack --mode production
+
+sh: webpack: command not found
