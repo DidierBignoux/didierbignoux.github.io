@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 const TerserWebpackPlugin = require('terser-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 // const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
 
 module.exports = function (_env, argv) {
@@ -85,6 +86,14 @@ module.exports = function (_env, argv) {
 				jQuery: 'jquery',
 				'window.jQuery': 'jquery',
 			}),
+			new CopyPlugin({
+				patterns: [
+					{
+						from: path.resolve(__dirname, 'public/fav.svg'),
+						to: path.resolve(__dirname, 'dist/fav.svg'),
+					},
+				],
+			}),
 			// Disabled FaviconsWebpackPlugin due to native module build issues
 			// new FaviconsWebpackPlugin({
 			//   // logo: path.join("./src/assets/img/fav.png"),
@@ -140,6 +149,7 @@ module.exports = function (_env, argv) {
 
 		devServer: {
 			compress: true,
+			contentBase: path.resolve(__dirname, 'public'),
 			historyApiFallback: true,
 			open: true,
 			overlay: true,
