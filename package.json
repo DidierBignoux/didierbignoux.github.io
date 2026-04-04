@@ -48,7 +48,7 @@
 		"babel-loader": "^8.0.6",
 		"babel-plugin-transform-react-remove-prop-types": "^0.4.24",
 		"css-loader": "^3.2.0",
-		"favicons-webpack-plugin": "^2.0.0",
+		"favicons-webpack-plugin": "^6.0.1",
 		"file-loader": "^4.2.0",
 		"gh-pages": "^2.2.0",
 		"gulp": "^4.0.2",
@@ -60,9 +60,9 @@
 		"mini-css-extract-plugin": "^0.8.0",
 		"optimize-css-assets-webpack-plugin": "^5.0.3",
 		"style-loader": "^1.0.0",
-		"terser-webpack-plugin": "^2.1.0",
+		"terser-webpack-plugin": "^5.4.0",
 		"url-loader": "^2.1.0",
-		"webpack": "^4.40.2",
+		"webpack": "^5.105.4",
 		"webpack-cli": "^3.3.9",
 		"webpack-dev-server": "^3.11.0"
 	}
