@@ -1,44 +1,38 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 	<head>
-		<meta charset="utf-8" />
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script>
+			(function () {
+				try {
+					var stored = localStorage.getItem('site_theme');
+					var theme = stored === 'light' || stored === 'dark' ? stored : null;
+					if (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+						theme = 'dark';
+					}
+					document.documentElement.setAttribute('data-theme', theme || 'light');
+				} catch (error) {}
+			})();
+		</script>
+		<meta name="theme-color" content="#ffffff" />
 		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1"
+			name="description"
+			content="Portfolio de Didier Bignoux, webmaster et développeur front-end à Maurice."
 		/>
-		<meta
-			name="theme-color"
-			content="#000000"
-		/>
-		<title>Didier Bignoux</title>
+		<title>Didier Bignoux — Webmaster & Front-end Developer</title>
+		<link rel="icon" href="/fav.svg" type="image/svg+xml" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			rel="icon"
-			href="/fav.svg"
-			type="image/svg+xml"
-		/>
-
-		<!--
-Google Font
-=========================== -->
-		<link
-			href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700"
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@300;400;500;600;700;900&display=swap"
 			rel="stylesheet"
 		/>
-		<link
-			href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700,900"
-			rel="stylesheet"
-		/>
-
-		<link
-			href="https://cdnjs.cloudflare.com/ajax/libs/animations/2.1/css/animations.min.css"
-			rel="stylesheet"
-		/>
-	<link href="/assets/css/vendors.owl.carousel.e64d00a4.chunk.css" rel="stylesheet"><link href="/assets/css/main.217c2237.chunk.css" rel="stylesheet"></head>
+		<script type="module" crossorigin src="/assets/index-CR-Adw_X.js"></script>
+		<link rel="stylesheet" crossorigin href="/assets/index-C68OsXAk.css">
+	</head>
 	<body>
-		<noscript>You need to enable JavaScript to run this web.</noscript>
-		<div
-			class="root"
-			id="root"
-		></div>
-	<script type="text/javascript" src="/assets/js/runtime.d2d0f5c3.js"></script><script type="text/javascript" src="/assets/js/vendors.babel.6fb89c1a.js"></script><script type="text/javascript" src="/assets/js/vendors.react-use.40c55422.js"></script><script type="text/javascript" src="/assets/js/vendors.react-wow.2e304622.js"></script><script type="text/javascript" src="/assets/js/vendors.fortawesome.4429d423.js"></script><script type="text/javascript" src="/assets/js/vendors.owl.carousel.46bb4284.js"></script><script type="text/javascript" src="/assets/js/vendors.prop-types.1563077f.js"></script><script type="text/javascript" src="/assets/js/vendors.webpack.da310e31.js"></script><script type="text/javascript" src="/assets/js/vendors.react-dom.a3107587.js"></script><script type="text/javascript" src="/assets/js/vendors.react-is.c8ab238d.js"></script><script type="text/javascript" src="/assets/js/main.5278a06d.js"></script></body>
+		<noscript>JavaScript doit être activé pour afficher ce site.</noscript>
+		<div id="root"></div>
+	</body>
 </html>
