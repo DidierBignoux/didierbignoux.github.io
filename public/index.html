@@ -2,6 +2,22 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
+		<script>
+			(function () {
+				try {
+					var key = 'site_theme';
+					var t = localStorage.getItem(key);
+					if (
+						!t &&
+						window.matchMedia &&
+						window.matchMedia('(prefers-color-scheme: dark)').matches
+					)
+						t = 'dark';
+					if (!t) t = 'light';
+					document.documentElement.setAttribute('data-theme', t);
+				} catch (e) {}
+			})();
+		</script>
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1"

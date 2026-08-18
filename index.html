@@ -1,30 +1,118 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <title>Didier Bignoux</title>
+<!doctype html>
+<html lang="en-MU">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script>
+			(function () {
+				try {
+					var stored = localStorage.getItem('site_theme');
+					var theme = stored === 'light' || stored === 'dark' ? stored : null;
+					if (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+						theme = 'dark';
+					}
+					document.documentElement.setAttribute('data-theme', theme || 'light');
+				} catch (error) {}
+			})();
+		</script>
+		<meta name="theme-color" content="#ffffff" />
+		<meta name="author" content="Didier Bignoux" />
+		<meta name="robots" content="index, follow, max-image-preview:large" />
+		<meta
+			name="description"
+			content="Didier Bignoux is a Mauritius-based webmaster and WordPress specialist offering website maintenance, troubleshooting, performance optimization and front-end development."
+		/>
+		<title>Didier Bignoux | Webmaster &amp; WordPress Specialist Mauritius</title>
+		<link rel="canonical" href="https://didierbignoux.com/" />
+		<link rel="alternate" hreflang="en" href="https://didierbignoux.com/" />
+		<link rel="alternate" hreflang="fr" href="https://didierbignoux.com/?lang=fr" />
+		<link rel="alternate" hreflang="mfe" href="https://didierbignoux.com/?lang=mfe" />
+		<link rel="alternate" hreflang="x-default" href="https://didierbignoux.com/" />
 
-    <!--
-Google Font
-=========================== -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700,900"
-      rel="stylesheet"
-    />
+		<meta property="og:type" content="profile" />
+		<meta property="og:site_name" content="Didier Bignoux" />
+		<meta property="og:locale" content="en_MU" />
+		<meta property="og:url" content="https://didierbignoux.com/" />
+		<meta
+			property="og:title"
+			content="Didier Bignoux | Webmaster &amp; WordPress Specialist"
+		/>
+		<meta
+			property="og:description"
+			content="Website maintenance, WordPress management, troubleshooting, performance optimization and front-end development in Mauritius."
+		/>
+		<meta property="og:image" content="https://didierbignoux.com/didier-bignoux-social-card.png" />
+		<meta property="og:image:secure_url" content="https://didierbignoux.com/didier-bignoux-social-card.png" />
+		<meta property="og:image:type" content="image/png" />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		<meta property="og:image:alt" content="Didier Bignoux — Webmaster and WordPress Specialist in Mauritius" />
+		<meta property="profile:first_name" content="Didier" />
+		<meta property="profile:last_name" content="Bignoux" />
 
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/animations/2.1/css/animations.min.css"
-      rel="stylesheet"
-    />
-  <link rel="shortcut icon" href="/assets/img/fav-149e08466f6a3af98c1db211bc1d4d96/favicon.ico"><link rel="icon" type="image/png" sizes="16x16" href="/assets/img/fav-149e08466f6a3af98c1db211bc1d4d96/favicon-16x16.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/img/fav-149e08466f6a3af98c1db211bc1d4d96/favicon-32x32.png"><link rel="icon" type="image/png" sizes="48x48" href="/assets/img/fav-149e08466f6a3af98c1db211bc1d4d96/favicon-48x48.png"><link rel="manifest" href="/assets/img/fav-149e08466f6a3af98c1db211bc1d4d96/manifest.json"><meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="didierbignoux"><link rel="apple-touch-icon" sizes="57x57" href="/assets/img/fav-149e08466f6a3af98c1db211bc1d4d96/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/assets/img/fav-149e08466f6a3af98c1db211bc1d4d96/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/assets/img/fav-149e08466f6a3af98c1db211bc1d4d96/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/assets/img/fav-149e08466f6a3af98c1db211bc1d4d96/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/assets/img/fav-149e08466f6a3af98c1db211bc1d4d96/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/assets/img/fav-149e08466f6a3af98c1db211bc1d4d96/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/assets/img/fav-149e08466f6a3af98c1db211bc1d4d96/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/assets/img/fav-149e08466f6a3af98c1db211bc1d4d96/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="167x167" href="/assets/img/fav-149e08466f6a3af98c1db211bc1d4d96/apple-touch-icon-167x167.png"><link rel="apple-touch-icon" sizes="180x180" href="/assets/img/fav-149e08466f6a3af98c1db211bc1d4d96/apple-touch-icon-180x180.png"><link rel="apple-touch-icon" sizes="1024x1024" href="/assets/img/fav-149e08466f6a3af98c1db211bc1d4d96/apple-touch-icon-1024x1024.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="didierbignoux"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"    href="/assets/img/fav-149e08466f6a3af98c1db211bc1d4d96/apple-touch-startup-image-640x1136.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"    href="/assets/img/fav-149e08466f6a3af98c1db211bc1d4d96/apple-touch-startup-image-750x1334.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"    href="/assets/img/fav-149e08466f6a3af98c1db211bc1d4d96/apple-touch-startup-image-828x1792.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"    href="/assets/img/fav-149e08466f6a3af98c1db211bc1d4d96/apple-touch-startup-image-1125x2436.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"    href="/assets/img/fav-149e08466f6a3af98c1db211bc1d4d96/apple-touch-startup-image-1242x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"    href="/assets/img/fav-149e08466f6a3af98c1db211bc1d4d96/apple-touch-startup-image-1242x2688.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"   href="/assets/img/fav-149e08466f6a3af98c1db211bc1d4d96/apple-touch-startup-image-1536x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"   href="/assets/img/fav-149e08466f6a3af98c1db211bc1d4d96/apple-touch-startup-image-1668x2224.png"><link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"   href="/assets/img/fav-149e08466f6a3af98c1db211bc1d4d96/apple-touch-startup-image-1668x2388.png"><link rel="apple-touch-startup-image" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"  href="/assets/img/fav-149e08466f6a3af98c1db211bc1d4d96/apple-touch-startup-image-2048x2732.png"><link rel="apple-touch-startup-image" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"  href="/assets/img/fav-149e08466f6a3af98c1db211bc1d4d96/apple-touch-startup-image-1620x2160.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"   href="/assets/img/fav-149e08466f6a3af98c1db211bc1d4d96/apple-touch-startup-image-1136x640.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"   href="/assets/img/fav-149e08466f6a3af98c1db211bc1d4d96/apple-touch-startup-image-1334x750.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"   href="/assets/img/fav-149e08466f6a3af98c1db211bc1d4d96/apple-touch-startup-image-1792x828.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"   href="/assets/img/fav-149e08466f6a3af98c1db211bc1d4d96/apple-touch-startup-image-2436x1125.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"   href="/assets/img/fav-149e08466f6a3af98c1db211bc1d4d96/apple-touch-startup-image-2208x1242.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"   href="/assets/img/fav-149e08466f6a3af98c1db211bc1d4d96/apple-touch-startup-image-2688x1242.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"  href="/assets/img/fav-149e08466f6a3af98c1db211bc1d4d96/apple-touch-startup-image-2048x1536.png"><link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"  href="/assets/img/fav-149e08466f6a3af98c1db211bc1d4d96/apple-touch-startup-image-2224x1668.png"><link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"  href="/assets/img/fav-149e08466f6a3af98c1db211bc1d4d96/apple-touch-startup-image-2388x1668.png"><link rel="apple-touch-startup-image" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/assets/img/fav-149e08466f6a3af98c1db211bc1d4d96/apple-touch-startup-image-2732x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"  href="/assets/img/fav-149e08466f6a3af98c1db211bc1d4d96/apple-touch-startup-image-2160x1620.png"><link rel="icon" type="image/png" sizes="228x228" href="/assets/img/fav-149e08466f6a3af98c1db211bc1d4d96/coast-228x228.png"><meta name="msapplication-TileColor" content="#fff"><meta name="msapplication-TileImage" content="/assets/img/fav-149e08466f6a3af98c1db211bc1d4d96/mstile-144x144.png"><meta name="msapplication-config" content="/assets/img/fav-149e08466f6a3af98c1db211bc1d4d96/browserconfig.xml"><link rel="yandex-tableau-widget" href="/assets/img/fav-149e08466f6a3af98c1db211bc1d4d96/yandex-browser-manifest.json"><link href="/assets/css/vendors.owl.carousel.e64d00a4.chunk.css" rel="stylesheet"><link href="/assets/css/main.7afadb6f.chunk.css" rel="stylesheet"></head>
-  <body>
-    <noscript>You need to enable JavaScript to run this web.</noscript>
-    <div class="root" id="root"></div>
-  <script type="text/javascript" src="/assets/js/runtime.b35e8d90.js"></script><script type="text/javascript" src="/assets/js/vendors.babel.42f267d7.js"></script><script type="text/javascript" src="/assets/js/vendors.react-owl-carousel.babbaa7b.js"></script><script type="text/javascript" src="/assets/js/vendors.prop-types.9013d7f9.js"></script><script type="text/javascript" src="/assets/js/vendors.react-use.f3b07d39.js"></script><script type="text/javascript" src="/assets/js/vendors.react-wow.43780ed9.js"></script><script type="text/javascript" src="/assets/js/vendors.fortawesome.19696932.js"></script><script type="text/javascript" src="/assets/js/vendors.fbjs.c6c51e40.js"></script><script type="text/javascript" src="/assets/js/vendors.owl.carousel.f863f944.js"></script><script type="text/javascript" src="/assets/js/vendors.react-router.9e221315.js"></script><script type="text/javascript" src="/assets/js/main.58035630.js"></script></body>
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:image" content="https://didierbignoux.com/didier-bignoux-social-card.png" />
+		<meta name="twitter:image:alt" content="Didier Bignoux — Webmaster and WordPress Specialist in Mauritius" />
+		<meta
+			name="twitter:title"
+			content="Didier Bignoux | Webmaster &amp; WordPress Specialist"
+		/>
+		<meta
+			name="twitter:description"
+			content="Website maintenance, WordPress management, troubleshooting, performance optimization and front-end development in Mauritius."
+		/>
+
+		<script id="structured-data" type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@graph": [
+					{
+						"@type": "WebSite",
+						"@id": "https://didierbignoux.com/#website",
+						"url": "https://didierbignoux.com/",
+						"name": "Didier Bignoux",
+						"description": "Portfolio and professional services of Didier Bignoux, a webmaster and WordPress specialist in Mauritius.",
+						"inLanguage": "en-MU"
+					},
+					{
+						"@type": "Person",
+						"@id": "https://didierbignoux.com/#didier-bignoux",
+						"name": "Didier Bignoux",
+						"url": "https://didierbignoux.com/",
+						"image": "https://didierbignoux.com/didier-bignoux-social-card.png",
+						"jobTitle": "Webmaster and WordPress Specialist",
+						"email": "mailto:didierbignoux@hotmail.com",
+						"address": {
+							"@type": "PostalAddress",
+							"addressCountry": "MU"
+						},
+						"knowsAbout": [
+							"WordPress",
+							"Website maintenance",
+							"Website performance optimization",
+							"Front-end development",
+							"Responsive web design",
+							"Website troubleshooting"
+						],
+						"sameAs": [
+							"https://www.linkedin.com/in/didierbignoux/",
+							"https://www.facebook.com/didierbignoux"
+						]
+					}
+				]
+			}
+		</script>
+		<link rel="icon" href="/fav.svg" type="image/svg+xml" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@300;400;500;600;700;900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<noscript>JavaScript must be enabled to view Didier Bignoux's portfolio.</noscript>
+		<div id="root"></div>
+		<script type="module" src="/src/main.jsx"></script>
+	</body>
 </html>

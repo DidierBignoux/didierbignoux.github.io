@@ -5,24 +5,27 @@
  * Author : Didier Bignoux
  */
 
-@import "bootstrap/functions";
-@import "bootstrap/variables";
+@import 'bootstrap/functions';
+@import 'bootstrap/variables';
+
+// color mode (light/dark) variables
+@import 'theme/color-mode';
 
 //
 // Grid mixinss
 
-@import "bootstrap/mixins/breakpoints";
+@import 'bootstrap/mixins/breakpoints';
 
 // including variables and mixins
-@import "theme/variables";
-@import "theme/mixins";
-@import "theme/flexbox";
-@import "theme/reset";
+@import 'theme/variables';
+@import 'theme/mixins';
+@import 'theme/flexbox';
+@import 'theme/reset';
 
 // Custom Scss
-@import "theme/predefined";
-@import "theme/elements";
-@import "theme/header";
-@import "theme/home";
-@import "theme/pages";
-@import "theme/footer";
+@import 'theme/predefined';
+@import 'theme/elements';
+@import 'theme/header';
+@import 'theme/home';
+@import 'theme/pages';
+@import 'theme/footer';

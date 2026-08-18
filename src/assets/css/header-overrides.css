@@ -1,0 +1,26 @@
+html {
+	scroll-behavior: smooth;
+}
+
+.banner-content .designation .designer,
+.banner-content .designation .developer {
+	font-weight: 700;
+}
+
+.about-area.section-gap {
+	padding-bottom: 90px;
+}
+
+.job-area.section-gap-top {
+	padding-top: 90px;
+}
+
+@media (max-width: 1024px) {
+	.about-area.section-gap {
+		padding-bottom: 40px;
+	}
+
+	.job-area.section-gap-top {
+		padding-top: 40px;
+	}
+}
